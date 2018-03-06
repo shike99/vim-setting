@@ -1,0 +1,72 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
+repo = 'osyo-manga/vim-precious'
+depends = ['context_filetype.vim']
+
+[[plugins]] # カーソル位置のコンテキストのftを判定するライブラリ
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]] # Japanese doc
+repo = 'vim-jp/vimdoc-ja'
+hook_add = '''
+    set helplang=ja,en
+'''
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'Raimondi/delimitMate'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+    " vim-airline
+    let g:airline#extensions#syntastic#enabled = 1
+    let g:airline#extensions#branch#enabled = 1
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tagbar#enabled = 1
+    let g:airline_skip_empty_sections = 1
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+hook_add = '''
+    let g:airline_theme = 'powerlineish'
+'''
+
+[[plugins]]
+repo = 'vim-syntastic/syntastic'
+hook_add = '''
+    " syntastic
+    let g:syntastic_always_populate_loc_list=1
+    let g:syntastic_error_symbol='✗'
+    let g:syntastic_warning_symbol='⚠'
+    let g:syntastic_style_error_symbol = '✗'
+    let g:syntastic_style_warning_symbol = '⚠'
+    let g:syntastic_auto_loc_list=1
+    let g:syntastic_aggregate_errors = 1
+'''
+
