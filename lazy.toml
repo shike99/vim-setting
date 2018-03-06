@@ -1,0 +1,114 @@
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_path = '.*'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+on_path = '.*'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+depends = ['neosnippet-snippets']
+on_i = 1
+on_ft = ['snippet']
+
+[[plugins]]
+repo = 'Shougo/neocomplete'
+if = 'has("lua")'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+if = 'has("nvim")'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+depends = 'neomru.vim'
+
+[[plugins]] # Golang
+repo = 'fatih/vim-go'
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['haml', 'slim', 'ruby', 'eruby']
+
+[[plugins]]
+repo = 'basyura/unite-rails'
+
+[[plugins]]
+repo = 'alpaca-tc/vim-endwise'
+on_i = 1
+
+[[plugins]]
+repo = 'taka84u9/vim-ref-ri'
+
+[[plugins]]
+repo = 'alpaca-tc/alpaca_tags'
+
+[[plugins]]
+repo = 'vim-scripts/ruby-matchit'
+on_ft = ['haml', 'slim', 'ruby', 'eruby']
+
+[[plugins]]
+repo = 'basyura/unite-rails'
+on_source = ['rails/bundle', 'rails/bundled_gem', 'rails/config', 'rails/controller',
+    'rails/db', 'rails/destroy', 'rails/features', 'rails/gem',
+    'rails/gemfile', 'rails/generate', 'rails/git', 'rails/helper',
+    'rails/heroku', 'rails/initializer', 'rails/javascript', 'rails/lib',
+    'rails/log', 'rails/mailer', 'rails/model', 'rails/rake',
+    'rails/route', 'rails/schema', 'rails/spec', 'rails/stylesheet', 'rails/view'
+]
+
+[[plugins]]
+repo = 'AndrewRadev/switch.vim'
+
+[[plugins]]
+repo = 'thoughtbot/vim-rspec'
+
+[[plugins]]
+repo = 'ecomba/vim-ruby-refactoring'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'vim-scripts/AnsiEsc.vim'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
+[[plugins]]
+repo = 'hail2u/vim-css3-syntax'
+
+[[plugins]]
+repo = 'gorodinskiy/vim-coloresque'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
+[[plugins]]
+repo = 'jelera/vim-javascript-syntax'
